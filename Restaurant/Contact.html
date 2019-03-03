@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!--
+Name: Dominique Morris
+Date Created: Feb. 26th 2019
+Most Recent Revision: Feb. 26th 2019
+-->
+<html lang ="en">
+
+<!-- This is the contact page -->
+
+<head>
+	<!-- Bootstrap Info -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Contact Us </title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- CSS Link -->
+	<link href="Main/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<!-- Home Icon Links -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<style>
+		#required{
+			font-weight: bold;
+		}
+		
+		body{
+			background-color: lightgrey;
+		}
+		button{
+			margin-bottom: 10px;
+		}
+	</style>
+
+		
+</head>
+	<header>
+		<h1> Hail Seitan </h1>
+	</header>
+
+	<nav>
+		<a class= "btn badge-pill" href="home.html"><i class="fa fa-home" href="home.html">Home</i></a>
+		<a class="btn badge-pill" href="Menu.html">Menu</a>
+		<a class="btn badge-pill" href="Contact.html">Contact Us</a>
+	</nav>
+<body>
+	<!-- Forms Section -->
+	<form action="" style="width: 500px; margin: auto" class="main-form needs-validation">
+		<!-- Input Text Boxes -->
+		<div class="form-check">
+			<div class="form-group">
+				<label id="required" for="name">Name:</label>
+					<input type="text" name="name" id="name" class="form-control" required>
+				<label id="required" for="email">Email:</label>
+					<input type="text" name="email" id="email" class="form-control" required>
+				<label id="required" for="phone">Phone Number:</label>
+					<input type="text" name="phone" id="phone" class="form-control" required>
+			</div>
+			<!-- Dropdown Menu -->
+			<div class="form-group">
+				<label  id="required" for="contact" required>Reason for Inquiry:</label><br />
+					<select id="contact" name="contact" class="form-control">
+						<option value="default" selected>Catering</option>
+						<option value="Private">Private Party</option>
+						<option value="Feedback">Feedback</option>
+						<option value="Other">Other</option>
+					</select>
+			</div>
+			<!-- Additional Text Box -->
+			<div class="form-group>
+				<label for="info">Additional Information:</label>
+				<textarea id="info" name="info" class="form-control"></textarea>
+			</div>
+		<!-- Radio Buttons -->
+		<div class="form-group">
+			<fieldset>
+					<legend>Have you been to the restaurant?</legend>
+					<input type="radio" id="choice1" name="questionnaire" value="yes">
+						<label for="choice1">Yes</label>
+					<input type="radio" id="choice2" name="questionnaire" value="no">
+						<label for="choice2">No</label>
+			</fieldset>
+		<!-- Dropdown Menu -->
+			<fieldset>
+				<div class="form-check">
+					<legend>Best days to contact you:</legend>
+						<input type="checkbox" id="Monday" name="day" value="Monday" class="form-check-input">
+							<label for="Monday" class="form-check-label">M</label><br />
+						<input type="checkbox" id="Tuesday" name="day" value="Tuesday" class="form-check-input">
+							<label for="Tuesday" class="form-check-label">T</label><br />
+						<input type="checkbox" id="Wednesday" name="day" value="Wednesday" class="form-check-input">
+							<label for="Wednesday" class="form-check-label">W</label><br />
+						<input type="checkbox" id="Thursday" name="day" value="Thursday" class="form-check-input">
+							<label for="Thursday" class="form-check-label">Th</label><br />
+						<input type="checkbox" id="Friday" name="day" value="Friday" class="form-check-input">
+							<label for="Friday" class="form-check-label">F</label><br />
+				</div>
+			</fieldset>
+		</div>
+		</div>
+		<!-- Submit -->	
+		<button type="submit" class="btn btn-outline-primary">Send Request</button>
+		
+	
+<footer>
+		<p> 999 South Heart Drive, NomNom, Texas 80085 </p>
+		<p> (111)-867-5309 </p>
+</footer>
+
+<script>
+	window.alert("This site is best viewed with JavaScript");
+</script>
+<script>
+	
+	var form= document.quesrySelector('.needs-validation');
+		form.addEventListener('submit', function(event){
+			if(form.checkValidity() == false) {
+				event.preventDefault();
+				event.stopPropagation();
+				form.classList.add('was-validated');
+		})
+</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

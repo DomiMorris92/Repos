@@ -3,27 +3,68 @@
 <!--
 Name: Dominique Morris
 Date Created: Feb. 20th 2019
-Most Recent Revision: Feb. 21th 2019
+Most Recent Revision: Feb. 25th 2019
 -->
-<html lang ="en"> 
+<html lang="en"> 
 	<head>
 		<title> Domi's Portfolio </title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			caption{
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table{
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			th{
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			 tbody tr:nth-child(odd){
+				background-color: #e4c3ad;
+			}
+			
+			/* Article Layouts */
+			.clear-float{
+				clear:both;
+			}
+			article img{
+				float:left;
+				margin-left: 20px;
+			}
+			.right-content{
+				float:left;
+			}
+
+		</style>
 	</head>
 	<body>
 		<header>
 			<h1> Portfolio for Dominique Morris </h1>
 		</header>
-		<hr />
-		<nav>
+		
+		<nav class="border">
 			<p><a href="Projects.html">Projects</a></p>
 			<p><a href="Contacts.html">Contact</a></p>
 			<p><a href="Testimonials.html">Testimonials</a></p>
+		<div class="clear-float"> </div>
 		</nav>
-		<hr />
 		<section>
-			<article id="about me">
+			<article class="border" id="about me">
 				<h2><em>About Me </em></h2>
-				<img src="images/SelfieJacket2.jpg" alt="Portrait of Dominique Morris" />
+				<img src="images/SelfieJacket2.jpg" alt="Portrait of Dominique Morris" width= "250" />
+			
 				<p> I go by <strong>Domi</strong>, sounds like Tommy but with a "d". I've gone by this for a long time, because I grew up in a
 					town where quite a few people had the same name, so it was less confusing. I'm 26 years old, and I <strong>graduated college</strong>
 					at the beginning of last year. I've been a server since I was 18, and I've been working since I was 16.
@@ -33,17 +74,23 @@ Most Recent Revision: Feb. 21th 2019
 					Arabia for work, and I miss her like crazy. I don't think I would be here today if I didn't have such a close 
 					family. We're small compared to most, but very close to one another.
 				</p>
+				<div class="clear-float"> </div>
 			</article>
+			
 			<article id="past">
 				<h2><em>Past Experiences </em></h2>
-				<img src="images/FlyingSaucerRetro2.jpg" alt="Beach Day with Green Flash Brewery at The Flying Saucer" />
+				<img src="images/FlyingSaucerRetro2.jpg" alt="Beach Day with Green Flash Brewery at The Flying Saucer" width="250"/>
+				
 				<table>
-					<caption><strong>Employment History</strong></caption>
+					<caption>Employment History</caption>
+					<thead>
 						<tr>
 							<th>Years of Employment</th>
 							<th>Title</th>
 							<th>Company</th>
 						</tr>
+					</thead>
+					<tbody>
 						<tr>
 							<td>2017-2019</td>
 							<td>Server/Trainer</td>
@@ -59,11 +106,15 @@ Most Recent Revision: Feb. 21th 2019
 							<td>Corprate Trainer</td>
 							<td>Movie Tavern</td>
 						</tr>
+					</tbody>
 				</table>
+				<div class="clear-float"> </div>
 			</article>
+			
 			<article id="hobbies">
 				<h2><em>Hobbies </em></h2>
-				<img src="images/TennisVolley.jpg" alt="Dominique returning a tennis serve." />
+				<img src="images/TennisVolley.jpg" alt="Dominique returning a tennis serve." width="250" />
+				<div class="right-content">
 				<ul>
 					<li>Authors</li>
 						<ol>
@@ -92,11 +143,12 @@ Most Recent Revision: Feb. 21th 2019
 							<li>Skiiing</li>
 						</ul>
 				</ul>
+				</div>
 			</article>
+			<div class="clear-float"> </div>
 		</section>
 		<footer>
-			<hr />
-			<pr>&copy; 2019 Dominique Morris. All rights reserved. </p>
+			<p>&copy; 2020 Dominique Morris. All rights reserved. </p>
 		</footer>
 
 	</body>

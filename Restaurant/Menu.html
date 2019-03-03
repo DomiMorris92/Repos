@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!--
+Name: Dominique Morris
+Date Created: Feb. 26th 2019
+Most Recent Revision: Feb. 26th 2019
+-->
+<html lang ="en">
+
+<!-- This is the Menu page for the restaurant -->
+<head>
+	<!-- BootStrap Links -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title> Menu </title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- CSS Links -->
+	<link href="Main/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<!-- Home Icon Links -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<style>
+		body{background-color: lightgrey;
+		}
+		h4{
+			text-align: center;
+		}
+     /* Table Formatting */
+		caption{
+				font-weight: bold;
+				font-size: 1.2em;
+				text-decoration: underline;
+			}
+			table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table{
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			th{
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			 tbody tr:nth-child(odd){
+				background-color: lightgrey;
+			}
+			tbody tr:nth-child(even){
+				background-color: #888888;
+			}
+	</style>
+</head>
+	<header>
+		<h1> Hail Seitan </h1>
+	</header>
+	<hr />
+	<nav style="background-color:white;">
+		<a class= "btn badge-pill" href="home.html"><i class="fa fa-home" href="home.html">Home</i></a>
+		<a class="btn badge-pill" href="Menu.html">Menu</a>
+		<a class="btn badge-pill" href="Contact.html">Contact Us</a>
+	</nav>
+	<hr />
+<body>
+	<div class="row">
+				<div class="col-lg-3 col-md" id="burgers">
+					<h4> Burger and Fries </h4>
+					<p> An American Classis! <br />
+					Your choice- with or without cheese <br />
+					Pickle, onion, tomato, and lettuce <br />
+					Served with our famous thick cut french fries. <br />
+					$7.95 </p>
+				</div>
+				<div class="col-lg-3 col-md" id="Hotdog">
+					<h4> Hot Dog and Chips </h4>
+					<p> A Summer Classic! <br />
+					Your choice- white or wheat bun <br />
+					Relish, mustard, and ketchup <br />
+					Served with our house-made chips. <br />
+					$7.95 </p>
+				</div>
+				<div class="col-lg-3 col-md" id="Italian">
+					<h4> Italian Sausage and Peppers </h4>
+					<p> An All-Time Favorite! <br />
+					Your choice- mild or spicy <br />
+					Cole Slaw <br />
+					Served with garlic mashers <br />
+					$10.95 </p>
+				</div>
+	</div>
+	<div class="row">
+				<div class="col-lg-3 col-md" id="Tenderloin">
+					<h4> Tenderlion Sandwich and Chips </h4>
+					<p> Really Hits the Spot! <br />
+					Plain or Sesame Sewed Bun <br />
+					Pickle, onion, tomato, and lettuce <br />
+					Served with our house-made chips <br />
+					$8.95 </p>
+				</div>
+				<div class="col-lg-3 col-md" id="Salad">
+					<h4> House Salad </h4>
+					<p> On the Lighter Side <br />
+					Your choice- with or without cheese <br />
+					Iceberg lettuce, tomatoes, peppers <br />
+					Thousand Islaand or Ranch Dressing <br />
+					Served wtih a dinner roll. <br />
+					$6.95 </p>
+				</div>
+				<div class="col-lg-3 col-md" id="Brisket">
+					<h4> Brisket Sandwich and Fries </h4>
+					<p> A Taste of Texas! <br />
+					Smoked Brisket on thick-cut Texas Toast <br />
+					Cole Slaw <br />
+					Served with our famouse thick-cut french fries. <br />
+					$7.95 </p>
+				</div>
+		</div>
+		
+		<!-- Drink Menu Table -->
+		
+		<table>
+				<caption> Beverages </caption>
+					<thead>
+						<tr>
+							<th>Drink</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					</tbody>
+				</table>
+	<footer>
+		<p> 999 South Heart Drive, NomNom, Texas 80085 </p>
+		<p> (111)-867-5309 </p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	</body>
+</html>

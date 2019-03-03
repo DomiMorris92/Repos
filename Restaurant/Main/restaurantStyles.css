@@ -1,0 +1,55 @@
+
+Creator: Domi
+Date Created: Feb 26th 2019
+Date Last Modified: Feb 26th 2019
+*/
+/*
+General formatting for all of the pages
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+
+header{
+	background-color: #5b7d87;
+	color: #lightgrey;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+h1{
+	font-size: 2.5em;
+	font-family: 'Great Vibes', cursive;
+}
+nav{
+	background-color: white;
+	border-top: 3px dashed #546a7b;
+	border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+}
+header, footer{
+	background-color: #546a7b;
+	color: lightgrey;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+nav .btn{ background-color: #546a7b;
+				color: black;
+			}
+nav .btn:link{ color: black;
+	text-decoration: underline;
+	}
+nav .btn:visited{ color: darkred;
+	text-decoration: underline;
+}
+nav .btn:hover{ font-weight: bold;
+	text-decoration: underline;
+}
+nav .btn:active{ font-weight: bold;
+	text-decoration: none;
+}
+p{
+		text-align: center;
+	}
+}
